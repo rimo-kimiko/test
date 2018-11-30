@@ -30,16 +30,20 @@
                     #リスト内の全データの紹介が完了してループを抜ける
 
         # 好きなレストランを質問する
+        restaurant = input(name + 'さん。どこのレストランが好きですか?')
 
         # CSV書き込み
-
+        with open('restaurant_list.csv', 'a+') as csv_file:
+        csv_file.write(restaurant)
 
 
     # CSVファイルにデータが存在しない場合
 
     # 好きなレストランを質問する
+    restaurant = input(name + 'さん。どこのレストランが好きですか?')
 
     # CSV書き込み
-
+    with open('restaurant_list.csv', 'a+') as csv_file:
+    csv_file.write(restaurant)
 
 # closing
